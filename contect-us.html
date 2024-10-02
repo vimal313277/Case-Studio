@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Case Study</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- ===== style.css ===== -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- ====== favicon ===== -->
+    <link rel="shortcut icon" href="download-removebg-preview.jpg" type="image/x-icon">
+    <!-- ===== og image =====  -->
+    <meta property="og:image"
+        content="https://solutions.technologyadvice.com/wp-content/uploads/2023/06/write-better-case-studies.jpeg" />
+    <!-- ===== bootstrap link ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- ==== bootstrap icon link =====  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- ===== bootstrap saprate =====  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- ===== font family link (google font) =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ===== AOS library ======  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- ====== javascript ======  -->
+    <script src='main.js'></script>
+
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+
+    <!-- ===== load-line Start =====  -->
+
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <!-- ===== load-line End ===== -->
+
+    <!-- ===== main header =====  -->
+
+    <!-- ===== navbar start =====  -->
+
+    <nav class="navbar navbar-expand-md sticky-top mainnvbr">
+        <div class="logo"><a href="#">Sylvan Schumm</a></div>
+        <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#nvcl">
+            <div class="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+        </button>
+        <div class="collapse navbar-collapse" id="nvcl">
+            <ul class="nbls">
+                <li><a href="index.html" class="active brc"> <i class="bi bi-house"></i> Home</a></li>
+                <li><a href="Case-Studies.html" class="brc"><i class="bi bi-book"></i> Case Studies</a></li>
+                <button type="button" class="btn btn-md cntsbtn"><a href="contect-us.html" class="text-white"><i
+                            class="bi bi-phone"></i> Contect
+                        Us</a></button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============ contect Us hiro section start =========== -->
+
+    <section id="contect-us-hiro-sec">
+
+        <div class="container-fluid cnct-hiro-sec">
+
+            <div class="row hiro-sec-row">
+
+                <div class="col-md-6 c-hiro-contect">
+
+                    <div class="row contect-head-row">
+                        <div class="col-6 coct-heading">
+                            <h1 class="h-c-o-c-t" data-aos="fade-up" data-aos-duration="2000">Make an Appointment
+                                Experience Elegance</h1>
+                        </div>
+                        <div class="col-6 coct-img">
+                            <img src="contect-us-image.png" class="img-fluid" data-aos="fade-up"
+                                data-aos-duration="3000">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====== contect form Start ====== -->
+
+                <div class="col-md-6 c-hiro-img">
+
+                    <div class="container-fluid conct-main" data-aos="fade-up" data-aos-duration="2000">
+                        <form id="formvld">
+
+                            <label class="form-lable">Full Name *</label>
+                            <label id="name-error" class="error" for="name">Please enter at least 2 characters.</label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input type="text" class="form-control" name="name" placeholder="Enter Your Full Name"
+                                    required>
+                            </div>
+
+                            <label class="form-lable">Email *</label> <label id="email-error" class="error"
+                                for="email">Please enter a valid email address.</label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="text" class="form-control" name="email" placeholder="Enter Your Email"
+                                    required>
+                            </div>
+
+                            <label class="form-lable">Phone No *</label> <label id="phone-error" class="error"
+                                for="phone">Please enter a valid number.</label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                <input type="text" class="form-control" name="phone"
+                                    placeholder="Enter Your Phone Number" required>
+                            </div>
+
+                            <label class="form-lable">Website Url *</label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <span class="input-group-text"><i class="bi bi-globe-asia-australia"></i></span>
+                                <input type="url" class="form-control" placeholder="Url" required>
+                            </div>
+
+                            <label class="form-lable">Number of aligner patients per year </label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <label class="input-group-text"><i class="bi bi-people"></i></label>
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>less than 100</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <label class="form-lable">Job title and background</label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <label class="input-group-text"><img src="Vector.png" class="img-fluid"></label>
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Select Type</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                            <label class="form-lable">How many staff members do you have?</label>
+                            <div class="input-group" data-aos="flip-down" data-aos-duration="3000">
+                                <label class="input-group-text"><i class="bi bi-person-plus"></i></label>
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>1-5</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <p class="text-center mt-3"><input type="submit" class="smbtn text-white rounded"></p>
+                        </form>
+                    </div>
+
+                </div>
+
+                <!-- ====== contect form End ====== -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ============ contect Us hiro section End =========== -->
+
+    <!-- =========== Time-line-start ========== -->
+
+    <section id="timeline">
+
+        <div class="container-fluid timeline-main-ct">
+
+            <div class="timeline-main">
+
+                <ul class="mainline">
+                    <li class="phone" data-aos="fade-down"><i class="bi bi-telephone">&nbsp; 2830503049</i>
+                        <!-- <div class="nmbr-cnct">2830503049</div> -->
+                    </li>
+
+                    <li class="mail" data-aos="fade-down">abc01@gmail.com&nbsp; <i class="bi bi-envelope"></i>
+                        <!-- <div class="mail-cnct">abc01@gmail.com</div> -->
+                    </li>
+
+                    <li class="add" data-aos="fade-down"><i class="bi bi-house">&nbsp; Rajkot,Gujrat,India</i></i>
+                        <!-- <div class="add-cnct">Rajkot,Gujrat,India</div> -->
+                    </li>
+
+                    <li class="web" data-aos="fade-down">www.demo.com &nbsp; <i class="bi bi-globe"></i></i>
+                        <!-- <div class="web-cnct">www.demo.com</div> -->
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========== Time-line-End ========== -->
+
+    <!-- ========== Footer Start ==========  -->
+
+    <footer>
+
+        <div class="container-fluid section-footer">
+
+            <div class="row ftr-m-r">
+
+                <div class="col-md-3 c-ftr-one">
+
+                    <h4 class="ftr-head">Sylvan Schumm</h4>
+                    <p class="ftr-pera">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                </div>
+
+                <div class="col-md-3 c-ftr-two">
+                    <ul class="ftr-ul">Main Pages
+                        <li><a href="#" class="brc">Home</a></li>
+                        <li><a href="#" class="brc">Case Studies</a></li>
+                        <li><a href="#" class="brc">Contect Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 c-ftr-three">
+
+                    <ul class="ftr-ul">Case Studies
+                        <li><a href="#" class="brc">Lorem Ipsum...</a></li>
+                        <li><a href="#" class="brc">Lorem Ipsum is simply...</a></li>
+                        <li><a href="#" class="brc">Lorem Ipsum is...</a></li>
+                        <li><a href="#" class="brc">Lorem Ipsum is sim...</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-3 c-ftr-four">
+
+                    <ul class="ftr-ul">Information
+                        <li><a href="#" class="brc"><i class="bi bi-geo-alt-fill"></i> 1265 Anthony Dr, New York,
+                                USA</a></li>
+                        <li><a href="#" class="brc"><i class="bi bi-telephone-fill"></i> (+02) 13779 - 24234</a></li>
+                        <li><a href="#" class="brc"><i class="bi bi-envelope-fill"></i> ass@gmail.com</a></li>
+                    </ul>
+
+                    <div class="row social-ftr hover-effect1">
+
+                        <ul class="social-media-footer">
+                            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            Copyright © 2024 | <span class="clr-white">Sylvan Schumm</span> | All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <!-- ========== Footer End ==========  -->
+
+
+    <!-- library  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <!-- ===== AOS library CDN =====  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
